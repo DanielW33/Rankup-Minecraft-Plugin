@@ -1,0 +1,20 @@
+main: Rankup
+name: RankUp
+version: 0.1.1
+author: MuchDan
+api-version: 1.15
+depend:
+  - Essentials
+commands:
+  RankUp:
+    description: Type /Rankup confirm to rank up!
+    permission: Rankup.RankUp
+  Demote:
+    description: Operator command /Demote [UserName] Demotes a user.
+    permission: Rankup.Demote
+  Ranks:
+    description: Type /Ranks to view the player ranks.
+    permission: Rankup.Ranks
+  Rank:
+    description: See player ranks
+    permission: Rankup.Rankup

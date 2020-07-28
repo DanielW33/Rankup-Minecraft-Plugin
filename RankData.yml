@@ -1,0 +1,348 @@
+#Created by MuchDan
+#API-Version 1.15
+
+GUI-NAME: '&8Ranks'
+GUI-SIZE: 27
+LuckPerms-Track: 'playerranks'
+Rankup-Command-Message: 'Type &b/Rankup confirm&r to rank up.'
+Ranks-Command-Message: 'Type &b/Ranks&r to view a list of available player ranks.'
+
+############################################################
+##  Beginning of Rank input: Compatible with LuckPerms only. Dependant of Essentials
+##  Name: (Input String)
+##  Rankup-Display: (Input String)
+##  Rankup-Display-Footer: (Input String)
+##  Block-Material: (Input Material [All caps, Must match portion normally after Material ex. Material.IRON_INGOT])
+##  Abilites: (Input String list)
+##  Amount: (Input Integer)
+##
+Rank:
+  0: #0 is the position within the luck perms track listed above.
+    Name: '&bPeasant&r' #Name is the name at that position in the track.
+    Rankup-Display: '----------[&bPeasant&r]----------' #This is how peasant is displayed when a player types /rankup
+    #Rank up display footer is null if unwanted.
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: DIRT #this is the material that represents peasant in /ranks
+    Enchanted: false     #This is for a shiny effect on the object
+    Abilities:           #this is the metadata that is shown underneath items in /ranks
+      - ''
+      - '&7Ability to do all basic commands.'
+    Amount: 0 #This is the price that will be taken out of the user's account on /rankup confirm
+  1:
+    Name: '&cBandit&r'
+    Rankup-Display: '----------[&cBandit&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: WOODEN_SWORD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&71 Additional Home'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$100'
+    Amount: 100
+  2:
+    Name: '&aRecruit&r'
+    Rankup-Display: '----------[&aRecruit&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: LEATHER_CHESTPLATE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&71 Additional Home'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$200'
+    Amount: 200
+  3:
+    Name: '&3Apprentice&r'
+    Rankup-Display: '----------[&3Apprentice&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: COMPASS
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Create Disposal and Balance signs.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$500'
+    Amount: 500
+  4:
+    Name: '&eCitizen&r'
+    Rankup-Display: '----------[&eCitizen&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: CRAFTING_TABLE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to create a town'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$1,000'
+    Amount: 1000
+  5:
+    Name: '&2Merchant&r'
+    Rankup-Display: '----------[&2Merchant&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: EMERALD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to create chest shops.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$1,500'
+    Amount: 1500
+  6:
+    Name: '&fArtisan&r'
+    Rankup-Display: '----------[&fArtisan&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: PAINTING
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&71 Additonal Home'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$2,500'
+    Amount: 2500
+  7:
+    Name: '&6Treasurer&r'
+    Rankup-Display: '----------[&6Treasurer&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: GOLD_INGOT
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /baltop'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$6,500'
+    Amount: 6500
+  8:
+    Name: '&8Gentleman&r'
+    Rankup-Display: '----------[&8Gentleman&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: SWEET_BERRIES
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /craft, /wb'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$11,500'
+    Amount: 11500
+  9:
+    Name: '&4Knight&r'
+    Rankup-Display: '----------[&4Knight&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: IRON_SWORD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /warp bank'
+      - '&7Bank Access'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$20,000'
+    Amount: 20000
+  10:
+    Name: '&3Paladin&r'
+    Rankup-Display: '----------[&3Paladin&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: DIAMOND_CHESTPLATE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /pweather'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$40,000'
+    Amount: 40000
+  11:
+    Name: '&9Commander&r'
+    Rankup-Display: '----------[&9Commander&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: MAP
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /ptime'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$60,000'
+    Amount: 60000
+  12:
+    Name: '&dElder&r'
+    Rankup-Display: '----------[&dElder&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: SKULL_BANNER_PATTERN
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /ec, /enderchest'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$100,000'
+    Amount: 100000
+  13:
+    Name: '&2Elite&r'
+    Rankup-Display: '----------[&2Elite&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: CREEPER_HEAD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&71 Additional Home'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$150,000'
+    Amount: 150000
+  14:
+    Name: '&aLeader&r'
+    Rankup-Display: '----------[&aLeader&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: LEAD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to create a Nation.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$250,000'
+    Amount: 250000
+  15:
+    Name: '&cMaster&r'
+    Rankup-Display: '----------[&cMaster&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: HEART_OF_THE_SEA
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /back'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$400,000'
+    Amount: 400000
+  16:
+    Name: '&5Mage&r'
+    Rankup-Display: '----------[&5Mage&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: BLAZE_POWDER
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to set 3 jobs.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$650,000'
+    Amount: 650000
+  17:
+    Name: '&bGuardian&r'
+    Rankup-Display: '----------[&bGuardian&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: SHIELD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /back on death.'
+      - '&7Cost &c$1,500,000'
+    Amount: 1500000
+  18:
+    Name: '&eRoyal&r'
+    Rankup-Display: '----------[&eRoyal&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: GOLDEN_APPLE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to Silk touch spawners.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$3,500,000'
+    Amount: 3500000
+  19:
+    Name: '&6King&r'
+    Rankup-Display: '----------[&6King&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: GOLDEN_HELMET
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Keep Experience on death.'
+      - '&7Ability to use /Nick'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$7,000,000'
+    Amount: 7000000
+  20:
+    Name: '&5Overseer&r'
+    Rankup-Display: '----------[&5Overseer&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: ENDER_EYE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /jumpboost'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$10,000,000'
+    Amount: 10000000
+  21:
+    Name: '&dHero&r'
+    Rankup-Display: '----------[&dHero&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: DRAGON_HEAD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to use /speed'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$25,000,000'
+    Amount: 25000000
+  22:
+    Name: '&4Valkyria&r'
+    Rankup-Display: '----------[&4Valkyria&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: DIAMOND_SWORD
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Sneaking grants invisibility.'
+      - '&7Use /Stealth to toggle on and off'
+      - ''
+      - '&71 Additional Home.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$40,000,000'
+    Amount: 40000000
+  23:
+    Name: '&fCelestial&r'
+    Rankup-Display: '----------[&fCelestial&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: FEATHER
+    Enchanted: true
+    Abilities:
+      - ''
+      - '&7Access to colored NickNames'
+      - '&7Ability to use /glow'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$65,000,000'
+    Amount: 65000000
+  24:
+    Name: '&3Eternal&r'
+    Rankup-Display: '----------[&3Eternal&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: NETHER_STAR
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&725% chance to not consume Starlight Essence or Void Essence.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$100,000,000'
+    Amount: 100000000
+  25:
+    Name: '&8Ephemeral&r'
+    Rankup-Display: '----------[&8Ephemeral&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: WITHER_ROSE
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Ability to set 4 jobs.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$150,000,000'
+    Amount: 150000000
+  26:
+    Name: '&eStella&r'
+    Rankup-Display: '----------[&eStella&r]----------'
+    Rankup-Display-Footer: '-----------------------------'
+    Block-Material: SPECTRAL_ARROW
+    Enchanted: false
+    Abilities:
+      - ''
+      - '&7Access to /fly'
+      - '&7Ability to use any previous rank varient.'
+      - '&7All previous rank abilities.'
+      - '&7Cost &c$300,000,000'
+    Amount: 300000000
